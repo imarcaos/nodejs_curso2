@@ -23,4 +23,8 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 5 - Criando Rotas usando o Express
     - Instalando o express na pasta do projeto "Aula5" em modo save
         - npm install express --save
+- Aula 6 - Usando NodeJS no Repl.it
+    - https://replit.com/
+    - Código das Aulas 4 e 5 replicados para testar o site replit
+
 
