@@ -11,3 +11,5 @@ Os códigos estão divididos por Aulas ex.: Aula1, Aula2, ...
 Sempre que houver enunciados, estarão juntamente com o código.
 
 Aula 1 - Introdução, instalação e 1º código
+Aula 2 - Criando um servidor simples em NodeJS
+    - Site com código de estatus (erros e mensagens) HTTP: https://http.cat/
