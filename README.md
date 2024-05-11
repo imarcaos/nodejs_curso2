@@ -26,5 +26,9 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 6 - Usando NodeJS no Repl.it
     - https://replit.com/
     - Código das Aulas 4 e 5 replicados para testar o site replit
-
+- Aula 7 - Modularizando as rotas do App NodeJS
+    - Na pasta do projeto vamos instalar as dependências do Express e do Router, ambos em modo save
+        - npm install express --save
+        - npm install router --save
+- 
 
