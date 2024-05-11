@@ -20,3 +20,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 4 - Módulo FS para manipular ficheiros
     - readFile - lê o ficheiro
     - appendFile - Se o ficheiro não existir ele cria, se existir ele escreve no ficheiro existente
+- Aula 5 - Criando Rotas usando o Express
+    - Instalando o express na pasta do projeto "Aula5" em modo save
+        - npm install express --save
+
