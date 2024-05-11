@@ -10,6 +10,11 @@ Aqui neste Git ficarão os apontamentos e lista de exercícios e tarefas feitas 
 Os códigos estão divididos por Aulas ex.: Aula1, Aula2, ...
 Sempre que houver enunciados, estarão juntamente com o código.
 
-Aula 1 - Introdução, instalação e 1º código
-Aula 2 - Criando um servidor simples em NodeJS
+- Aula 1 - Introdução, instalação e 1º código
+- Aula 2 - Criando um servidor simples em NodeJS
     - Site com código de estatus (erros e mensagens) HTTP: https://http.cat/
+- Aula 3 - Criando rotas no Servidor
+    - Especificando a rota no navegador e passando parâmetros - aula03b.js
+        - ex.: http://localhost:3000/?nome=Marcos&curso=NodeJS
+        - será apresentado a variável nome e curso na tela
+
