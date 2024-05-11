@@ -17,4 +17,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Especificando a rota no navegador e passando parâmetros - aula03b.js
         - ex.: http://localhost:3000/?nome=Marcos&curso=NodeJS
         - será apresentado a variável nome e curso na tela
-
+- Aula 4 - Módulo FS para manipular ficheiros
+    - readFile - lê o ficheiro
+    - appendFile - Se o ficheiro não existir ele cria, se existir ele escreve no ficheiro existente
