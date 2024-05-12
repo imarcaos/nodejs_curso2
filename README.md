@@ -30,11 +30,13 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Na pasta do projeto vamos instalar as dependências do Express e do Router, ambos em modo save
         - npm install express --save
         - npm install router --save
-- Aula 8 - NodeJS com base de dados MySQL - módulo mysql2
+- Aula 8 - NodeJS com base de dados MySQL Pt1- módulo mysql2
     - Conexões a BD, utilizar as definidas por nós.
     - Tem uma BD: curso_node tabela de nome: client_node ,campos: id(pk), nome(varchar 45), idade(varchar 45)
     - Instalar o módulo do MySQL mysql2
         - npm install mysql2 --save
     - Foi feita a consulta a BD onde já tinha um valor inserido e retornou os dados como era de esperar.
+- Aula 9 - NodeJS com base de dados MySQL Pt2- módulo mysql2
+    - Função Inserir cliente
 
 
