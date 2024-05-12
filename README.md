@@ -41,4 +41,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 10 - NodeJS com base de dados MySQL Pt3- módulo mysql2
     - Função Atualizar cliente
     - Função Apagar cliente
+- Aula 11 - Trabalhando com eventos EventEmitter()
+    - Fizemos emissão de mensagens simples durante os eventos, deu para perceber que podemos criar códigos complexos durante dentro das emissões.
 
