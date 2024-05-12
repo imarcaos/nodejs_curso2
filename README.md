@@ -38,5 +38,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Foi feita a consulta a BD onde já tinha um valor inserido e retornou os dados como era de esperar.
 - Aula 9 - NodeJS com base de dados MySQL Pt2- módulo mysql2
     - Função Inserir cliente
-
+- Aula 10 - NodeJS com base de dados MySQL Pt3- módulo mysql2
+    - Função Atualizar cliente
+    - Função Apagar cliente
 
