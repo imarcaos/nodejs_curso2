@@ -15,14 +15,21 @@ async function run() {
     await dbo.collection(colecao).insertOne(obj);
     console.log('Um novo curso inserido'); */
 
-    // Pesquisar
-    // const query= {}
-    // const query= {curso: 'Curso de NodeJS'}
-    // const res= await dbo.collection(colecao).findOne(query)
+    /* // Pesquisar
+    const query= {}
+    const query= {curso: 'Curso de NodeJS'}
+    const res= await dbo.collection(colecao).findOne(query)
+    console.log(res) */
 
-    // expressões regulares
+    /* // expressões regulares
     const query= {curso: /N./}
     const res= await dbo.collection(colecao).find(query).toArray();
+    console.log(res) */
+
+    // expressões regulares
+    const ordenar= {curso:1} //1 crescente, -1 decrescente
+    const query= {}
+    const res= await dbo.collection(colecao).find(query).sort(ordenar).toArray();
     console.log(res)
 
   } finally {

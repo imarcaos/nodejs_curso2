@@ -70,3 +70,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 15 - Usando MongoDB com NodeJS Pt3
     - Método find() com expressões regulares, exemplo parte código
     - const res= await dbo.collection(colecao).find({curso: /N./}).toArray();
+- Aula 16 - Ordenando a pesquisa com o método SORT no MongoDB
+    - Adicionar o método sort(campo:valor) a seguir ao find() valor=(1 crescente, -1 decrescente)
+    - const res= await dbo.collection(colecao).find(query).sort(curso:1).toArray();
