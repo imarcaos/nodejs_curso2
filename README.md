@@ -47,7 +47,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 12 -  Upload de ficheiros em NodeJs com  o módulo formidable
     - Instalar o módulo na pasta do projeto, Aula12
         - npm install formidable
-- Aula 13 - Usando MongoDB com NodeJS
+- Aula 13 - Usando MongoDB com NodeJS Pt1
     - Instalar o módulo MongoDB
         -npm install 
     - No curso está sendo ensinado a conectar com o servidor online do MongoDB
@@ -63,4 +63,8 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Verificar os dados inseridos
         - no Mongo Shell e dentro da BD: db.cursos.find().pretty()
     - Retornou os dados como esperado.
-
+- Aula 14 - Usando MongoDB com NodeJS Pt2
+    - Método findOne e find
+    - Solução para utilizar await e async como MongoDB e Node
+        - https://stackoverflow.com/questions/47370487/node-js-mongodb-driver-async-await-queries
+    

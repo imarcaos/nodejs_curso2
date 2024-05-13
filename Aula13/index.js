@@ -8,11 +8,20 @@ async function run() {
     await client.connect();
 
     const dbo = client.db('cursos');
-    const obj = { curso: 'Curso de NodeJS', canal: 'CFB Cursos' };
     const colecao = 'curso2_node';
     
+    /* // Inserir    
+    const obj = { curso: 'Curso de NodeJS', canal: 'CFB Cursos' };
     await dbo.collection(colecao).insertOne(obj);
-    console.log('Um novo curso inserido');
+    console.log('Um novo curso inserido'); */
+
+    // Pesquisar
+    const query= {}
+    // const query= {curso: 'Curso de NodeJS'}
+    // const res= await dbo.collection(colecao).findOne(query)
+    const res= await dbo.collection(colecao).find(query)
+    console.log(res)
+
   } finally {
     await client.close();
   }
@@ -36,7 +45,7 @@ mongodb.connect(url, (erro, banco)=>{
 */
 
 /*
-// Código passado no comentário
+// Código Novo passado no comentário
 const { MongoClient } = require('mongodb');
 const uri = "<insertpath>";
 
