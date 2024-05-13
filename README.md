@@ -5,6 +5,7 @@
 Data início: 2024/05/10
 
 Estou a seguir um curso de NodeJs pela web, esta página server para deixar anotações para futuras consultas.
+Youtube: https://www.youtube.com/playlist?list=PLx4x_zx8csUjFC41ev2qX5dnr-0ThpoXE
 
 Aqui neste Git ficarão os apontamentos e lista de exercícios e tarefas feitas durante as aulas
 Os códigos estão divididos por Aulas ex.: Aula1, Aula2, ...
@@ -46,4 +47,20 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 12 -  Upload de ficheiros em NodeJs com  o módulo formidable
     - Instalar o módulo na pasta do projeto, Aula12
         - npm install formidable
+- Aula 13 - Usando MongoDB com NodeJS
+    - Instalar o módulo MongoDB
+        -npm install 
+    - No curso está sendo ensinado a conectar com o servidor online do MongoDB
+    - Com o que aprendi no Curso1 de NodeJS, estou a conectar em uma BD local
+    - Tenho instalado o Servidor MongoDB e o MongoShell (ver informação e manipular BD MongoDB)
+    - Iniciar o Servidor MongoDB na linha de comandos
+        - mongod
+    - Verificar BD existentes
+        - executar o mongo shell no terminal: mongosh
+    - Depois de executar o node e o nosso ficheiro index.sh ele cria a BD:"cursos" e coleção: "cursos2_node" e insere os dados propostos.
+    - Verificar se a coleção foi criada
+        - no Mongo Shell: use cursos
+    - Verificar os dados inseridos
+        - no Mongo Shell e dentro da BD: db.cursos.find().pretty()
+    - Retornou os dados como esperado.
 
