@@ -43,4 +43,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Função Apagar cliente
 - Aula 11 - Trabalhando com eventos EventEmitter()
     - Fizemos emissão de mensagens simples durante os eventos, deu para perceber que podemos criar códigos complexos durante dentro das emissões.
+- Aula 12 -  Upload de ficheiros em NodeJs com  o módulo formidable
+    - Instalar o módulo na pasta do projeto, Aula12
+        - npm install formidable
 
