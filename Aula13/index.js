@@ -11,15 +11,18 @@ async function run() {
     const colecao = 'curso2_node';
     
     /* // Inserir    
-    const obj = { curso: 'Curso de NodeJS', canal: 'CFB Cursos' };
+    const obj = { curso: 'Java', canal: 'IEFP' };
     await dbo.collection(colecao).insertOne(obj);
     console.log('Um novo curso inserido'); */
 
     // Pesquisar
-    const query= {}
+    // const query= {}
     // const query= {curso: 'Curso de NodeJS'}
     // const res= await dbo.collection(colecao).findOne(query)
-    const res= await dbo.collection(colecao).find(query)
+
+    // expressões regulares
+    const query= {curso: /N./}
+    const res= await dbo.collection(colecao).find(query).toArray();
     console.log(res)
 
   } finally {

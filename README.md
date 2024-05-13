@@ -67,4 +67,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Método findOne e find
     - Solução para utilizar await e async como MongoDB e Node
         - https://stackoverflow.com/questions/47370487/node-js-mongodb-driver-async-await-queries
-    
+- Aula 15 - Usando MongoDB com NodeJS Pt3
+    - Método find() com expressões regulares, exemplo parte código
+    - const res= await dbo.collection(colecao).find({curso: /N./}).toArray();
