@@ -76,3 +76,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 17 - Removendo objetos da coleção com A deleteMany e deleteOne
     - Código que apaga objeto por id:
         - dbo.collection(colecao).deleteOne( { _id: ObjectId('664260b354ccc59a2a05eb95') } );
+- Aula 18 - Contando Registos inseridos(insertedCount) e apagados(deletedCount)
+    - Código para contar objetos apagados, a contagem de inseridos funciona da mesma maneira.
+        - const count= await dbo.collection(colecao).deleteMany( query );
+        - console.log(count.deletedCount +' Objeto(s) Apagado(s) com Sucesso');

@@ -16,6 +16,20 @@ async function run() {
     await dbo.collection(colecao).insertOne(obj);
     console.log('Um novo curso inserido'); */
 
+    /* // Inserir muitos
+    const obj= [
+      {curso:'Curso de Javascript', canal:'CFB Cursos'},
+      {curso:'Curso de Javascript', canal:'CFB Cursos'},
+      {curso:'Curso de C++', canal:'Youtube'}
+    ]
+    try {
+      const count= await dbo.collection(colecao).insertMany(obj);
+      console.log(count.insertedCount +' Objeto inserido com Sucesso');
+    } catch (e) {
+        console.log(e);
+    } */
+
+
     /* // Pesquisar
     const query= {}
     const query= {curso: 'Curso de NodeJS'}
@@ -33,13 +47,15 @@ async function run() {
     const res= await dbo.collection(colecao).find(query).sort(ordenar).toArray();
     console.log(res) */
 
-    // Apagar objeto - deleteMany e deleteOne
+    /* // Apagar objeto - deleteMany e deleteOne
     // É aconselhável apagar objetos pelo id, mas podemos usar por exemplo:
-    // const query= { _id: ObjectId('664260b354ccc59a2a05eb95') }
-    /* const query= {curso: 'Curso de NodeJS'}
+    //const query= { _id: ObjectId('6643d37c6784efa541ad9401') }
+    //const query= {curso: 'Curso de NodeJS'}
+    //const query= {curso:/.t/}
     try {
-      await dbo.collection(colecao).deleteOne( query );
-      console.log('Objeto Apagado com Sucesso');
+      const count= await dbo.collection(colecao).deleteOne( query );      
+      //const count= await dbo.collection(colecao).deleteMany( query );
+      console.log(count.deletedCount +' Objeto(s) Apagado(s) com Sucesso');
     } catch (e) {
         console.log(e);
     } */
