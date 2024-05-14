@@ -49,7 +49,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
         - npm install formidable
 - Aula 13 - Usando MongoDB com NodeJS Pt1
     - Instalar o módulo MongoDB
-        -npm install 
+        -npm install mongodb
     - No curso está sendo ensinado a conectar com o servidor online do MongoDB
     - Com o que aprendi no Curso1 de NodeJS, estou a conectar em uma BD local
     - Tenho instalado o Servidor MongoDB e o MongoShell (ver informação e manipular BD MongoDB)
@@ -73,3 +73,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 16 - Ordenando a pesquisa com o método SORT no MongoDB
     - Adicionar o método sort(campo:valor) a seguir ao find() valor=(1 crescente, -1 decrescente)
     - const res= await dbo.collection(colecao).find(query).sort(curso:1).toArray();
+- Aula 17 - Removendo objetos da coleção com A deleteMany e deleteOne
+    - Código que apaga objeto por id:
+        - dbo.collection(colecao).deleteOne( { _id: ObjectId('664260b354ccc59a2a05eb95') } );

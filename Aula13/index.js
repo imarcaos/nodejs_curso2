@@ -9,9 +9,10 @@ async function run() {
 
     const dbo = client.db('cursos');
     const colecao = 'curso2_node';
-    
+
+       
     /* // Inserir    
-    const obj = { curso: 'Java', canal: 'IEFP' };
+    const obj = { curso: 'Java', canal: 'Udemy' };
     await dbo.collection(colecao).insertOne(obj);
     console.log('Um novo curso inserido'); */
 
@@ -26,11 +27,27 @@ async function run() {
     const res= await dbo.collection(colecao).find(query).toArray();
     console.log(res) */
 
-    // expressões regulares
+    /* // Ordenar Sort
     const ordenar= {curso:1} //1 crescente, -1 decrescente
     const query= {}
     const res= await dbo.collection(colecao).find(query).sort(ordenar).toArray();
+    console.log(res) */
+
+    // Apagar objeto - deleteMany e deleteOne
+    // É aconselhável apagar objetos pelo id, mas podemos usar por exemplo:
+    // const query= { _id: ObjectId('664260b354ccc59a2a05eb95') }
+    /* const query= {curso: 'Curso de NodeJS'}
+    try {
+      await dbo.collection(colecao).deleteOne( query );
+      console.log('Objeto Apagado com Sucesso');
+    } catch (e) {
+        console.log(e);
+    } */
+
+    // Listar Objetos
+    const res= await dbo.collection(colecao).find({}).toArray();
     console.log(res)
+    console.log("--- Fim da Listagem de Objetos ---\n")
 
   } finally {
     await client.close();
