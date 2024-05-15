@@ -60,7 +60,7 @@ async function run() {
         console.log(e);
     } */
 
-    // Modificar/Atualizar objeto - updateOne e updateManye
+    /* // Modificar/Atualizar objeto - updateOne e updateManye
     //const query= { _id: ObjectId('6643d37c6784efa541ad9401') }
     //const query= {curso: 'Curso de NodeJS'}
     const query= {curso:'Curso de Javascript'}
@@ -71,12 +71,19 @@ async function run() {
       console.log(count.modifiedCount +' Objeto(s) Atualizado(s) com Sucesso');
     } catch (e) {
         console.log(e);
-    }
+    } */
 
-    // Listar Objetos
-    const res= await dbo.collection(colecao).find({}).toArray();
+    // Listar Objetos com limite de objetos retornados
+    const limite= 3
+    const query= {curso:/C./}
+    const res= await dbo.collection(colecao).find(query).limit(limite).toArray();
     console.log(res)
     console.log("--- Fim da Listagem de Objetos ---\n")
+
+    /* // Listar Objetos
+    const res= await dbo.collection(colecao).find({}).toArray();
+    console.log(res)
+    console.log("--- Fim da Listagem de Objetos ---\n") */
 
   } finally {
     await client.close();

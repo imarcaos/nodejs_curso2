@@ -84,5 +84,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
     -  Código é parecido como o delete, adicionamos mais um campo com o tipo de alteração do objeto (novoObj)
         - await dbo.collection(colecao).updateOne(curso:'Curso de Javascript', {$set: {curso:'Javascript'}}); 
         - await dbo.collection(colecao).updateMany(query, novoObj);
-- Aula 20 -
+- Aula 20 - Limitando o número de objetos retornados em uma consulta
+    - await dbo.collection(colecao).find(query).limit(3).toArray();
         
