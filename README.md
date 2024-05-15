@@ -86,4 +86,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
         - await dbo.collection(colecao).updateMany(query, novoObj);
 - Aula 20 - Limitando o número de objetos retornados em uma consulta
     - await dbo.collection(colecao).find(query).limit(3).toArray();
+- Finalizado.
         
