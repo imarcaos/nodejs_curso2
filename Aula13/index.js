@@ -16,15 +16,15 @@ async function run() {
     await dbo.collection(colecao).insertOne(obj);
     console.log('Um novo curso inserido'); */
 
-    /* // Inserir muitos
-    const obj= [
+    // Inserir muitos
+    /* const obj= [
       {curso:'Curso de Javascript', canal:'CFB Cursos'},
       {curso:'Curso de Javascript', canal:'CFB Cursos'},
-      {curso:'Curso de C++', canal:'Youtube'}
+      //{curso:'Curso de C++', canal:'Youtube'}
     ]
     try {
       const count= await dbo.collection(colecao).insertMany(obj);
-      console.log(count.insertedCount +' Objeto inserido com Sucesso');
+      console.log(count.insertedCount +' Objeto(s) inserido(s) com Sucesso');
     } catch (e) {
         console.log(e);
     } */
@@ -59,6 +59,19 @@ async function run() {
     } catch (e) {
         console.log(e);
     } */
+
+    // Modificar/Atualizar objeto - updateOne e updateManye
+    //const query= { _id: ObjectId('6643d37c6784efa541ad9401') }
+    //const query= {curso: 'Curso de NodeJS'}
+    const query= {curso:'Curso de Javascript'}
+    const novoObj= {$set: {curso:'Javascript'}}
+    try {
+      //const count= await dbo.collection(colecao).updateOne(query, novoObj);      
+      const count= await dbo.collection(colecao).updateMany(query, novoObj);
+      console.log(count.modifiedCount +' Objeto(s) Atualizado(s) com Sucesso');
+    } catch (e) {
+        console.log(e);
+    }
 
     // Listar Objetos
     const res= await dbo.collection(colecao).find({}).toArray();

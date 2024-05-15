@@ -80,3 +80,9 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Código para contar objetos apagados, a contagem de inseridos funciona da mesma maneira.
         - const count= await dbo.collection(colecao).deleteMany( query );
         - console.log(count.deletedCount +' Objeto(s) Apagado(s) com Sucesso');
+- Aula 19 - Modificando/Atualizando objetos com updateOne e UpdateMany
+    -  Código é parecido como o delete, adicionamos mais um campo com o tipo de alteração do objeto (novoObj)
+        - await dbo.collection(colecao).updateOne(curso:'Curso de Javascript', {$set: {curso:'Javascript'}}); 
+        - await dbo.collection(colecao).updateMany(query, novoObj);
+- Aula 20 -
+        
